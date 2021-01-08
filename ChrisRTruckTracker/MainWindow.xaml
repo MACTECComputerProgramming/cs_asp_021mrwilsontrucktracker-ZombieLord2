@@ -1,0 +1,47 @@
+﻿<Window x:Class="ChrisRTruckTracker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChrisRTruckTracker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="434" Stroke="Black" VerticalAlignment="Center" Width="292">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF45B7" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="Driver Information" HorizontalAlignment="Left" Height="49" Margin="41,16,0,0" VerticalAlignment="Top" Width="212" Background="{x:Null}" FontSize="22" Foreground="White"/>
+        <Label Content="Driver Name" HorizontalAlignment="Left" Height="38" Margin="3,70,0,0" VerticalAlignment="Top" Width="128" Foreground="White" FontSize="18"/>
+        <TextBox x:Name="driverNameTextbox" HorizontalAlignment="Left" Height="39" Margin="41,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Foreground="White" SelectionTextBrush="Black" Text="Type Name Here" Background="#08000000" FontSize="18"/>
+        <Label Content="Social Security" HorizontalAlignment="Left" Height="37" Margin="3,153,0,0" VerticalAlignment="Top" Width="145" Foreground="White" FontSize="18"/>
+        <TextBox x:Name="driverNumberTextbox" HorizontalAlignment="Left" Height="40" Margin="41,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Foreground="White" SelectionTextBrush="Black" Text="Type Number Here" Background="#08000000" FontSize="18"/>
+        <Label Content="End Miles" HorizontalAlignment="Left" Height="38" Margin="3,396,0,0" VerticalAlignment="Top" Width="98" Foreground="White" FontSize="18"/>
+        <TextBox x:Name="driverPhoneTextbox" HorizontalAlignment="Left" Height="39" Margin="41,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Foreground="White" SelectionTextBrush="Black" Text="Type Number Here" Background="#08000000" FontSize="18"/>
+        <Label Content="Start Miles" HorizontalAlignment="Left" Height="38" Margin="3,358,0,0" VerticalAlignment="Top" Width="98" Foreground="White" FontSize="18"/>
+        <Label Content="Phone Number" HorizontalAlignment="Left" Height="37" Margin="1,235,0,0" VerticalAlignment="Top" Width="145" Foreground="White" FontSize="18"/>
+        <TextBox x:Name="startMilesTextbox" HorizontalAlignment="Left" Height="34" Margin="122,358,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" Foreground="White" SelectionTextBrush="Black" Background="#08000000" FontSize="18"/>
+        <TextBox x:Name="endMilesTextbox" HorizontalAlignment="Left" Height="34" Margin="122,398,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" Foreground="White" SelectionTextBrush="Black" Background="#08000000" FontSize="18"/>
+        <CheckBox x:Name="checkBoxFridge" Content="Refrigerated (+0.12 per mile)" HorizontalAlignment="Left" Height="36" Margin="10,317,0,0" VerticalAlignment="Top" Width="264" Foreground="White" FontSize="19" Checked="CheckBox_Checked"/>
+        <Rectangle HorizontalAlignment="Left" Height="434" Margin="292,0,0,0" Stroke="Black" VerticalAlignment="Center" Width="230" Fill="#FFFF0089"/>
+        <Label Content="    Dates Driven" HorizontalAlignment="Center" Height="49" Margin="0,16,0,0" VerticalAlignment="Top" Width="179" FontSize="22"/>
+        <Label Content="Date Left" HorizontalAlignment="Left" Height="38" Margin="358,51,0,0" VerticalAlignment="Top" Width="90" FontSize="18"/>
+        <Calendar x:Name="dateLeft" HorizontalAlignment="Left" Height="164" Margin="318,87,0,0" VerticalAlignment="Top" Width="178"/>
+        <Label Content="Date Returned" HorizontalAlignment="Left" Height="38" Margin="343,248,0,0" VerticalAlignment="Top" Width="128" FontSize="18"/>
+        <Calendar x:Name="dateReturn" HorizontalAlignment="Left" Height="164" Margin="318,273,0,0" VerticalAlignment="Top" Width="178"/>
+        <Button x:Name="buttonPrint" Content="Print Driver Ticket" HorizontalAlignment="Left" Height="65" Margin="522,0,0,0" VerticalAlignment="Top" Width="278" Background="#FFED2727" Click="buttonPrint_Click"/>
+        <Rectangle HorizontalAlignment="Left" Height="369" Margin="522,65,0,0" Stroke="Black" VerticalAlignment="Top" Width="278" Fill="Red"/>
+        <Label x:Name="labelNameDriver" Content="" HorizontalAlignment="Left" Height="41" Margin="527,87,0,0" VerticalAlignment="Top" Width="134" FontSize="15"/>
+        <Label x:Name="labelNumberDriver" Content="" HorizontalAlignment="Left" Height="41" Margin="527,126,0,0" VerticalAlignment="Top" Width="134" FontSize="15"/>
+        <Label x:Name="labelPhoneDriver" Content="" HorizontalAlignment="Left" Height="41" Margin="527,169,0,0" VerticalAlignment="Top" Width="134" FontSize="15"/>
+        <Label x:Name="labelMilesTotal" Content="" HorizontalAlignment="Left" Height="42" Margin="527,210,0,0" VerticalAlignment="Top" Width="134" FontSize="15"/>
+        <Label x:Name="labelDaysTotal" HorizontalAlignment="Left" Height="42" Margin="527,251,0,0" VerticalAlignment="Top" Width="134" FontSize="15" Content="label"/>
+        <Label x:Name="labelPayDue" HorizontalAlignment="Left" Height="42" Margin="527,291,0,0" VerticalAlignment="Top" Width="134" FontSize="15" Content="label"/>
+        <Label x:Name="labelDaysVacation" HorizontalAlignment="Left" Height="42" Margin="527,337,0,0" VerticalAlignment="Top" Width="134" FontSize="15" Content="label"/>
+
+    </Grid>
+</Window>
